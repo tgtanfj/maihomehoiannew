@@ -5,7 +5,6 @@ import gallery01 from "../assets/gallery01.png";
 import gallery02 from "../assets/gallery02.png";
 import gallery03 from "../assets/gallery03.png";
 import gallery04 from "../assets/gallery04.png";
-import knife from "../assets/knife.png";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu.png";
 import overlaybg from "../assets/overlaybg.png";
@@ -26,6 +25,17 @@ import goicuon from "../assets/goicuon.png";
 import goicuon2 from "../assets/goicuon2.png";
 import mon1 from "../assets/mon1.png";
 import dua2 from "../assets/dua2.png";
+import g1 from "../assets/g1.jpg";
+import g2 from "../assets/g2.jpg";
+import g77 from "../assets/g77.jpg";
+import g88 from "../assets/g88.jpg";
+import g99 from "../assets/g99.jpg";
+import g9 from "../assets/g9.jpg";
+import g14 from "../assets/g14.jpg";
+import g8 from "../assets/g8.jpg";
+import g16 from "../assets/g16.jpg";
+import g17 from "../assets/g17.jpg";
+import g18 from "../assets/g18.jpg";
 
 export default {
   bg,
@@ -35,7 +45,6 @@ export default {
   gallery02,
   gallery03,
   gallery04,
-  knife,
   logo,
   menu,
   overlaybg,
@@ -56,4 +65,15 @@ export default {
   goicuon2,
   mon1,
   dua2,
+  g1,
+  g2,
+  g77,
+  g88,
+  g99,
+  g9,
+  g14,
+  g8,
+  g16,
+  g17,
+  g18,
 };
