@@ -9,6 +9,7 @@ import { Footer } from "./container";
 import GoogleMapPage from "./pages/GoogleMapPage";
 import GaleryPage from "./pages/GaleryPage";
 import CookingClassPage from "./pages/CookingClassPage";
+import TourDetail from "./pages/TourDetail";
 
 const App = () => (
   <Router>
@@ -18,6 +19,7 @@ const App = () => (
       <Route path="/map" element={<GoogleMapPage />} />
       <Route path="/gallery" element={<GaleryPage />} />
       <Route path="/cooking-class" element={<CookingClassPage />} />
+      <Route path="/tour/:slug" element={<TourDetail />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
     <Footer />

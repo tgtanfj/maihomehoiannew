@@ -15,6 +15,7 @@ const Newsletter = () => {
     message: "",
     participants: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -55,6 +56,7 @@ const Newsletter = () => {
     }
 
     try {
+      setIsLoading(true);
       const response = await axios.post(
         "https://maihome-backend.vercel.app/send-email",
         {
@@ -68,8 +70,8 @@ const Newsletter = () => {
           message: formData?.message,
         }
       );
-      console.log("response?.message", response)
       if (response?.data?.message === "Email sent successfully!") {
+        setIsLoading(false);
         Swal.fire({
           title: "Booking successfully!",
           text: "Your information has been sent to us.",
@@ -94,6 +96,7 @@ const Newsletter = () => {
           participants: "",
         });
       } else {
+        setIsLoading(false);
         Swal.fire({
           title: "Booking failed!",
           text: "Something went wrong, please try again!",
@@ -109,6 +112,7 @@ const Newsletter = () => {
         });
       }
     } catch (error) {
+      setIsLoading(false);
       console.error(
         "Error calling API:",
         error.response?.data || error.message
@@ -169,6 +173,9 @@ const Newsletter = () => {
             <option value="">Select Option</option>
             <option value="Package 6 hours class">Package 6 hours class</option>
             <option value="On site 4 hours class">On site 4 hours class</option>
+            <option value="Bamboo basket boat & Cooking at Tra Que Vegetable Village">
+              Bamboo basket boat & Cooking at Tra Que Vegetable Village
+            </option>
           </select>
         </div>
         <textarea
@@ -190,8 +197,9 @@ const Newsletter = () => {
             type="button"
             className="custom__button"
             onClick={handleSubmit}
+            disabled={isLoading}
           >
-            Book
+            {isLoading ? "∙∙∙" : "Book"}
           </button>
         </div>
       </div>
