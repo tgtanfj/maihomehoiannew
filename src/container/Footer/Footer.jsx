@@ -9,10 +9,9 @@ import { images } from "../../constants";
 import "./Footer.css";
 
 const Footer = () => (
-  <div className="app__footer section__padding" id="login">
+  <div className="app__footer section__padding" id="book">
     <FooterOverlay />
     <Newsletter />
-
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Contact Us</h1>
@@ -64,7 +63,7 @@ const Footer = () => (
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.1552110993975!2d108.33811257484818!3d15.900937484754417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420d47aa449905%3A0xe2e0f2e75784722b!2sMai%20Home%20Hoi%20An%20(Cooking%20class%20%26%20Restaurant)!5e0!3m2!1svi!2s!4v1734017558755!5m2!1svi!2s"
           width="320"
           height="280"
-          style={{border: 0}}
+          style={{ border: 0 }}
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"

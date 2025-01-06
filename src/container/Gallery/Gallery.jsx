@@ -1,16 +1,14 @@
 import React from "react";
-import {
-  BsInstagram,
-  BsArrowLeftShort,
-  BsArrowRightShort,
-} from "react-icons/bs";
-
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import { MdRestaurant } from "react-icons/md";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Gallery.css";
+import { useNavigate } from "react-router-dom";
 
 const Gallery = () => {
   const scrollRef = React.useRef(null);
+  const navigate = useNavigate();
 
   const scroll = (direction) => {
     const { current } = scrollRef;
@@ -23,7 +21,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="app__gallery flex__center">
+    <div className="app__gallery flex__center" id="gallery">
       <div className="app__gallery-content">
         <SubHeading title="Mai Home Hoi An" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
@@ -33,7 +31,11 @@ const Gallery = () => {
         >
           Take a closer look at us.
         </p>
-        <button type="button" className="custom__button">
+        <button
+          onClick={() => navigate("/gallery")}
+          type="button"
+          className="custom__button"
+        >
           View More
         </button>
       </div>
@@ -57,7 +59,7 @@ const Gallery = () => {
               key={`gallery_image-${index + 1}`}
             >
               <img src={image} alt="gallery_image" />
-              <BsInstagram className="gallery__image-icon" />
+              <MdRestaurant className="gallery__image-icon" />
             </div>
           ))}
         </div>

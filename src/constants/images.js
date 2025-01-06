@@ -36,6 +36,7 @@ import g8 from "../assets/g8.jpg";
 import g16 from "../assets/g16.jpg";
 import g17 from "../assets/g17.jpg";
 import g18 from "../assets/g18.jpg";
+import buncha from "../assets/buncha.png";
 
 export default {
   bg,
@@ -76,4 +77,5 @@ export default {
   g16,
   g17,
   g18,
+  buncha,
 };

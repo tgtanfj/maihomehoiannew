@@ -1,0 +1,39 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.not-found-content {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-title {
+  font-size: 100px;
+  font-weight: bold;
+  color: var(--color-golden);
+}
+
+.not-found-message {
+  font-size: 20px;
+  color: var(--color-golden);
+  margin-bottom: 20px;
+}
+
+.back-home-btn {
+  text-decoration: none;
+  background-color: var(--color-golden);
+  color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+

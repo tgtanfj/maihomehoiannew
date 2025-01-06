@@ -1,22 +1,27 @@
-import React from 'react';
+import React from "react";
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
-import { Navbar } from './components';
-import './App.css';
+import { Navbar } from "./components";
+import "./App.css";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import NotFoundPage from "./pages/NotFoundPage";
+import { Footer } from "./container";
+import GoogleMapPage from "./pages/GoogleMapPage";
+import GaleryPage from "./pages/GaleryPage";
+import CookingClassPage from "./pages/CookingClassPage";
 
 const App = () => (
-  <div>
+  <Router>
     <Navbar />
-    <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    <Laurels />
-    <Gallery />
-    <FindUs />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/map" element={<GoogleMapPage />} />
+      <Route path="/gallery" element={<GaleryPage />} />
+      <Route path="/cooking-class" element={<CookingClassPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
     <Footer />
-  </div>
+  </Router>
 );
 
 export default App;
