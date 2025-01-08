@@ -18,7 +18,7 @@ const Home = () => {
       <SpecialMenu />
       <Chef />
       <Intro />
-      <Laurels />
+      {/* <Laurels /> */}
       <Gallery />
       <FindUs />
     </div>
