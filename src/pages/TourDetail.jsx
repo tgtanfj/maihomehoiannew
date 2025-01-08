@@ -36,8 +36,8 @@ const TourDetail = () => {
   const tour = tours.find((tour) => tour.slug === slug);
 
   useEffect(() => {
-    console.log("tour", tour);
-  }, [tour]);
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!tour) {
     return <h1>Tour not found</h1>;

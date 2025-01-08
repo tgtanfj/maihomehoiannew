@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./CookingClassPage.css";
 import t1 from "../assets/galery/t1.jpg";
@@ -42,6 +42,10 @@ const CookingClassPage = () => {
       navigate(`/tour/${slug}`);
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="container">
