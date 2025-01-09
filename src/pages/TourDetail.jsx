@@ -36,7 +36,15 @@ const TourDetail = () => {
   const tour = tours.find((tour) => tour.slug === slug);
 
   useEffect(() => {
+    const tourTitles = {
+      "package-4-hours-class":
+        "Walk in - 4 Hour Cooking Class | Mai Home Hoi An",
+      "package-6-hours-class": "Package 6 Hours Class | Mai Home Hoi An",
+      "bamboo-basket-boat-and-cooking":
+        "Bamboo basket boat & Cooking at Tra Que Vegetable Village | Mai Home Hoi An",
+    };
     window.scrollTo(0, 0);
+    document.title = tourTitles[slug] || "Mai Home Hoi An";
   }, []);
 
   if (!tour) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   AboutUs,
   Chef,
@@ -11,6 +11,9 @@ import {
 } from "../container";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Mai Home Hoi An - The Best Tour In Hoi An";
+  }, []);
   return (
     <div>
       <Header />

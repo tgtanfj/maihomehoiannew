@@ -44,6 +44,7 @@ const CookingClassPage = () => {
   };
 
   useEffect(() => {
+    document.title = "Cooking Classes | Mai Home Hoi An";
     window.scrollTo(0, 0);
   }, []);
 

@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 const GoogleMapPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0); 
+    document.title = "Find Us | Mai Home Hoi An";
   }, []);
   return (
     <>

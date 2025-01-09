@@ -18,7 +18,7 @@ const App = () => (
       <Route path="/" element={<Home />} />
       <Route path="/map" element={<GoogleMapPage />} />
       <Route path="/gallery" element={<GaleryPage />} />
-      <Route path="/cooking-class" element={<CookingClassPage />} />
+      <Route path="/cooking-classes" element={<CookingClassPage />} />
       <Route path="/tour/:slug" element={<TourDetail />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>

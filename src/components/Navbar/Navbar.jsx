@@ -51,11 +51,11 @@ const Navbar = () => {
   };
 
   const handleNavigateToCookingClass = () => {
-    navigate("/cooking-class");
+    navigate("/cooking-classes");
   };
 
   const handleNavigateToCookingClassMenu = () => {
-    navigate("/cooking-class");
+    navigate("/cooking-classes");
     setToggleMenu(false);
   };
 
@@ -128,7 +128,7 @@ const Navbar = () => {
             className="p__opensans"
             onClick={() => handleNavigateToCookingClass()}
           >
-            <p>Cooking Class</p>
+            <p>Cooking Classes</p>
           </li>
           <li
             className="p__opensans"
@@ -185,7 +185,7 @@ const Navbar = () => {
                   className="p__opensans"
                   onClick={() => handleNavigateToCookingClassMenu()}
                 >
-                  <p>Cooking Class</p>
+                  <p>Cooking Classes</p>
                 </li>
                 <li
                   className="p__opensans"

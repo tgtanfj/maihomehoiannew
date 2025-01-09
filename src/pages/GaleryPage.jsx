@@ -36,6 +36,7 @@ function GaleryPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Gallery | Mai Home Hoi An";
   }, []);
 
   return (
