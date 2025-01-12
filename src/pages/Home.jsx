@@ -19,7 +19,7 @@ const Home = () => {
       <Header />
       <AboutUs />
       <SpecialMenu />
-      <Chef />
+      {/* <Chef /> */}
       <Intro />
       {/* <Laurels /> */}
       <Gallery />
