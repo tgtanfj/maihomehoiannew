@@ -3,27 +3,27 @@ import images from './images';
 const starters = [
   {
     title: 'Rice Pancake With Pork/Beef/Shrimp/Mushrooms',
-    price: '$56',
+    price: '60.000đ',
     tags: 'AU | Bottle',
   },
   {
     title: 'Fried Springrolls With Pork/Shrimp/Mushrooms',
-    price: '$59',
+    price: '80.000đ',
     tags: 'AU | Bottle',
   },
   {
     title: 'Green Papaya / Green Mango / Banana Flower Salad',
-    price: '$44',
+    price: '80.000đ',
     tags: 'FR | 750 ml',
   },
   {
     title: 'Fresh Springrolls With Shrimp/Pork/Mushrooms',
-    price: '$31',
+    price: '80.000đ',
     tags: 'CA | 750 ml',
   },
   {
     title: 'Fresh Steamed Rice Rolls With Mushrooms/Pork',
-    price: '$26',
+    price: '60.000đ',
     tags: 'IE | 750 ml',
   },
 ];
@@ -31,27 +31,27 @@ const starters = [
 const mainCourses = [
   {
     title: 'Caramelised Fish Cooked In Clay Pot',
-    price: '$20',
+    price: '120.000đ',
     tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
   },
   {
-    title: "Sweet & Sour Stirfried Beef/Pork/Chicken",
-    price: '$16',
+    title: "Sweet & Sour Sauteed Beef/Pork/Chicken",
+    price: '120.000đ',
     tags: 'Dark rum | Ginger beer | Slice of lime',
   },
   {
-    title: 'Stirfried Beef/Pork/Chicken With Lemongrass & Chili',
-    price: '$10',
+    title: 'Sauteed Beef/Pork/Chicken With Lemongrass & Chili',
+    price: '110.000đ',
     tags: 'Rum | Citrus juice | Sugar',
   },
   {
-    title: 'Mixed Vegetables & Mushroom Cooked In Clay Pot',
-    price: '$31',
+    title: 'Mixed Vegetables & Mushrooms Cooked In Clay Pot',
+    price: '90.000đ',
     tags: 'Bourbon | Brown sugar | Angostura Bitters',
   },
   {
-    title: 'Stuffed Vegetarian Tofu',
-    price: '$26',
+    title: 'Stuffed Tofu With Minced Pork, Mushrooms',
+    price: '90.000đ',
     tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
   },
 ];

@@ -10,6 +10,7 @@ import GoogleMapPage from "./pages/GoogleMapPage";
 import GaleryPage from "./pages/GaleryPage";
 import CookingClassPage from "./pages/CookingClassPage";
 import TourDetail from "./pages/TourDetail";
+import MenuPage from "./pages/MenuPage";
 
 const App = () => (
   <Router>
@@ -17,6 +18,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/map" element={<GoogleMapPage />} />
+      <Route path="/menu" element={<MenuPage />} />
       <Route path="/gallery" element={<GaleryPage />} />
       <Route path="/cooking-classes" element={<CookingClassPage />} />
       <Route path="/tour/:slug" element={<TourDetail />} />
