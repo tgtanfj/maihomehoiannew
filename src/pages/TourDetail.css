@@ -58,9 +58,10 @@
 }
 
 .image-container {
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center; 
+  width: 100%;
 }
 
 .tour-image {
@@ -73,5 +74,17 @@
 @media (min-width: 768px) {
   .tour-image {
     max-width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 2.5em; /* Tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2em; /* Mobile */
   }
 }
